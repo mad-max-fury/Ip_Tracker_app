@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IP address tracker</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <link rel="stylesheet" href="./sass/style.css">
+</head>
+
+<body>
+    <div class="loader-main">
+        <div class="loader"></div>
+        <div class="loader l2"></div>
+        <div class="loader l3"></div>
+    </div>
+    <main class="main">
+
+        <header class="head">
+            <h1>IP Address Tracker</h1>
+            <form method="" action="" id="ip">
+                <input type="text" name="ipaddress" id="ipadd" placeholder="Search for any IP address or domain"
+                    value="">
+                <button id="btn"> ></button>
+            </form>
+        </header>
+        <section class="map">
+
+            <section class="details">
+                <div class="detail">
+                    <p>ip address</p>
+                    <h2 id="ipaddress"></h2>
+                </div>
+                <div class="detail">
+                    <p>location</p>
+                    <h2 id="location"></h2>
+                </div>
+                <div class="detail">
+                    <p>timezone</p>
+                    <h2 id="timezone"></h2>
+                </div>
+                <div class="detail">
+                    <p>isp</p>
+                    <h2 id="isp"></h2>
+                </div>
+            </section>
+            <div id="map"></div>
+        </section>
+
+
+    </main>
+
+
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

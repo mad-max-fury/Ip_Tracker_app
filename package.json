@@ -1,0 +1,23 @@
+{
+  "name": "ip-address-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verreauxblack/ip-address-tracker.git"
+  },
+  "keywords": [
+    "ip",
+    "address"
+  ],
+  "author": "RAJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/verreauxblack/ip-address-tracker/issues"
+  },
+  "homepage": "https://github.com/verreauxblack/ip-address-tracker#readme"
+}

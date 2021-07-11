@@ -1,0 +1,71 @@
+.head
+    width: 100vw
+    height: 250px
+    background: url('../images/pattern-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    h1
+        position: absolute
+        top: 40px
+        color: white
+        font-weight: 500
+
+    form
+        $height: 55px
+        $radius: 10px
+        height: $height
+        display: flex
+        top: -10px
+
+        input[type=text]
+            width: 400px
+            height: $height
+            border: none
+            padding: 5px 10px
+            border-top-left-radius: $radius
+            border-bottom-left-radius: $radius
+            &:focus
+                outline: none
+
+        button
+            width: $height
+            height: $height
+            border: none
+            border-top-right-radius: $radius
+            border-bottom-right-radius: $radius
+            background: black
+            color: white
+            font-size: 20px
+            font-weight: 700
+            transition: 0.5s
+
+            &:hover
+                background: #3B3C36
+
+            &:active
+                padding-left: 20px
+                font-size: 15px
+
+@media ( max-width: 875px )
+    .head
+        height: 300px !important
+        background-position: right !important
+        h1
+            font-size: 20px
+            top: 20px
+
+        form
+            $height: 45px
+
+            input[type=text]
+                width: 200px
+                height: $height
+
+            button
+                height: $height
