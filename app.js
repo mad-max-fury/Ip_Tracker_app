@@ -13,7 +13,7 @@ const ipadd = userIp ? userIp : '';
 
 async function getData(ipadd) {
     loaders('block')
-    const URL = `https://geo.ipify.org/api/v1?apiKey=at_1mUGuhz4S3ARSkHeu2linLx2lApUc&ipAddress=${ipadd}`
+    const URL = `https://geo.ipify.org/api/v1?apiKey=at_dNhG8M1kw4pcBL1dECaTFs3Gf2rK5&ipAddress=${ipadd}`
     console.log("getData")
     //get the geolocation
     const fetchURL = async (url) => await fetch(url).then(response => response.json())
